@@ -31,21 +31,17 @@ Packed Java programs usually come in as a JAR archive with a few entry classes a
 
 To make a program resilient against this kind of tempering, One may use the JNI `DefineClass()` function to directly inject a native memory chunk into the JVM and pass the opaque `jclass*` pointer back to the customized `ClassLoader` without exposing the raw bytes in the Java implementation. Moreover, using the fact that pointers are nothing more than integers, one may implement a custom input stream that fetches resource data from the native codes, overriding the `getResourceAsStream()` method. This makes it possible to transform all the Java class files and the required resource entries in a JAR into a native package hence bypassing the mentioned choke points.  
 
-<figure class="image">
-  <center>
-  <img src="demo/fig1.png">
-  <figcaption>Fig 1. Schematic of the unpacking procedure.</figcaption>
-  </center>
-</figure>
+<p align="center">
+  <img src="demo/fig1.png"><br>
+  Fig 1. Schematic of the unpacking procedure.  
+</p>
 
 Furthermore, during the class loading and parsing procedure, references across different classes and their members are identified by their names. Instead of using static class files, one may edit these names before calling the `DefineClass()` function. This tool strips each class/member's name and assigns a random ID to it during the packing procedure. It later repopulates the names randomly on the fly when the packed program is executed.  
 
-<figure class="image">
-  <center>
-  <img src="demo/fig2.png">
-  <figcaption>Fig 2. Stacktrace of two separate runs of the demo output, showcasing the dynamical naming of classes and members.</figcaption>
-  </center>
-</figure>
+<p align="center">
+  <img src="demo/fig2.png"><br>
+  Fig 2. Stacktrace of two separate runs of the demo output, showcasing the dynamical naming of classes and members.  
+</p>
 
 Both the loader and the package files are currently marked as "safe" on VirusTotal, as of Dec. 13, 2022. If any of the security vendors is reading this, please flag the files though they're not malicious in this example. You may find the VirusTotal uploads here:  
 Loader: [`d66ec1b76e697952ab1dce582a3721aff5a7c90d63ea5836befbb609bcb668c5`](https://www.virustotal.com/gui/file/d66ec1b76e697952ab1dce582a3721aff5a7c90d63ea5836befbb609bcb668c5)  
