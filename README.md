@@ -7,7 +7,7 @@ Copyright (c) 2022, Tangent65536.
 
 ## Notice
 
-*This repository contains only a demo output (`dx` tool from Android SDK packed by this tool) and is **not** released under any license. You may **NOT** derive any product from this repository unless explicitly granted permission from the author. Since I cannot find any legit use case for this tool other than personal use, I will not release the source code. This is to mitigate the risks of potential abuse.*  
+*This repository contains only a demo output (`dx` tool from Android SDK packed by this packer) and is **not** released under any license. You may **NOT** derive any product from this repository unless explicitly granted permission by the author. Since I cannot find any legit use case for this tool other than personal use, I will not release the source code. This is to mitigate the risks of potential abuse.*  
 
 **For anti-malware solutions providers:** Please flag the binary files in the `output` folder as potentially unsafe, just like files packed with tools such as `VMProtect`. Maybe mark them as `Tangent's Packer`.  
 
