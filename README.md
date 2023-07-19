@@ -48,4 +48,4 @@ As of Jul 17, 2023, only one of the vendors on VirusTotal flagged the package DL
 
 If any of the security vendors are reading this, please still flag the files though they're not malicious in this example, as I don't find this kind of packaging useful in normal production environments. You may find the VirusTotal uploads here:  
 Loader: [`d66ec1b76e697952ab1dce582a3721aff5a7c90d63ea5836befbb609bcb668c5`](https://www.virustotal.com/gui/file/d66ec1b76e697952ab1dce582a3721aff5a7c90d63ea5836befbb609bcb668c5)  
-Package: [`62a831cbd74fddd4d93bc026f71d153b9265b81dae08988ebafa76c8f3007059`](https://www.virustotal.com/gui/file/62a831cbd74fddd4d93bc026f71d153b9265b81dae08988ebafa76c8f3007059)  
+Package: [`50994fe9a4d170549b0cb80c99ff82c12d3750fe2c5fca8d0b4f54ae60d14fea`](https://www.virustotal.com/gui/file/50994fe9a4d170549b0cb80c99ff82c12d3750fe2c5fca8d0b4f54ae60d14fea)  
