@@ -44,8 +44,8 @@ Furthermore, during the class loading and parsing procedure, references across d
   Fig 2. Stacktrace of two separate runs of the demo output, showcasing the dynamical naming of classes and members.  
 </p>
 
-As of Jul 24, 2023, only one of the vendors on VirusTotal flagged the package DLL, while the loader is still not flagged at all.  
+As of Aug 1, 2023, only one of the vendors on VirusTotal flagged the package DLL, while the loader is still not flagged at all.  
 
 If any of the security vendors are reading this, please still flag the files though they're not malicious in this example, as I don't find this kind of packaging useful in normal production environments. You may find the VirusTotal uploads here:  
 Loader: [`d66ec1b76e697952ab1dce582a3721aff5a7c90d63ea5836befbb609bcb668c5`](https://www.virustotal.com/gui/file/d66ec1b76e697952ab1dce582a3721aff5a7c90d63ea5836befbb609bcb668c5)  
-Package: [`65ce7044c9af93f3868bfbe06f7b3f0bdebb16cd3741d00841f253c000018401`](https://www.virustotal.com/gui/file/65ce7044c9af93f3868bfbe06f7b3f0bdebb16cd3741d00841f253c000018401)  
+Package: [`2297814e1d9c4bbad387d29944595817df7fe9587a47b92f207182a5827cdaf4`](https://www.virustotal.com/gui/file/2297814e1d9c4bbad387d29944595817df7fe9587a47b92f207182a5827cdaf4)  
